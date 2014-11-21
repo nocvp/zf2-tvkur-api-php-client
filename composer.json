@@ -9,7 +9,7 @@
             "email": "semih.sari@noc.com.tr"
         }
     ],
-    "require": {
+    "require-dev": {
         "noc-med/tvkur-api-php-client": "dev-master"
     }
 }
