@@ -10,7 +10,6 @@
         }
     ],
     "require": {
-        "zendframework/zendframework": "2.3.*",
         "noc-med/tvkur-api-php-client": "dev-master"
     }
 }
