@@ -1,0 +1,16 @@
+{
+    "name": "noc-med/zf2-tvkur-api-php-client",
+    "description": "Tvkur Api Php Sdk for zf2",
+    "minimum-stability": "dev",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "semihs",
+            "email": "semih.sari@noc.com.tr"
+        }
+    ],
+    "require": {
+        "zendframework/zendframework": "2.3.*",
+        "noc-med/tvkur-api-php-client": "dev-master"
+    }
+}
