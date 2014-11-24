@@ -8,5 +8,10 @@
             "name": "semihs",
             "email": "semih.sari@noc.com.tr"
         }
-    ]
+    ],
+    "autoload" : {
+        "psr-4" : {
+            "ZfTvkurApiClient\\" : "src/ZfTvkurApiClient/"
+        }
+    }
 }
