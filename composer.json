@@ -10,8 +10,11 @@
         }
     ],
     "autoload" : {
-        "psr-4" : {
-            "ZfTvkurApiClient\\" : "src/"
-        }
+        "psr-0" : {
+            "ZfTvkurApiClient" : "src"
+        },
+        "classmap" : [
+            "./Module.php"
+        ]
     }
 }
