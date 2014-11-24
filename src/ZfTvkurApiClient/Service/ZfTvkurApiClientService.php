@@ -18,7 +18,7 @@ class ZfTvkurApiClientService implements ServiceLocatorAwareInterface
     use \Zend\ServiceManager\ServiceLocatorAwareTrait;
 
     public function __invoke() {
-        $config = $this->getServiceLocator()->getServiceLocator()->get('Config');
+        $config = $this->getServiceLocator()->get('Config');
         return new TvkurApiClient($config['tvkur']);
     }
 } 
