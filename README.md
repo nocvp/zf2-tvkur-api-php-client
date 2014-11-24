@@ -50,7 +50,7 @@ Using
 -----
 
 
-    $tvkurApiClient = $this->getServiceLocator('TvkurApiClient');
+    $tvkurApiClient = $this->getServiceLocator('ZfTvkurApiClient');
     $response = $tvkurApiClient->video()->get($id, (array) $queryParams);
     
     

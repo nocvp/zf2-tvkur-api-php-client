@@ -10,18 +10,18 @@
 
 return array(
     'service_manager' => array(
-        'factories' => array(
-            'TvkurApiClient' => 'TvkurApiClient\Factory\TvkurApiClientFactory',
+        'invokables' => array(
+            'ZfTvkurApiClient' => 'ZfTvkurApiClient\Service\ZfTvkurApiClientService',
         ),
     ),
     'controller_plugins' => array(
         'invokables' => array(
-            'TvkurApiClient' => 'TvkurApiClient\Mvc\Controller\Plugin\TvkurApiClient',
+            'ZfTvkurApiClient' => 'ZfTvkurApiClient\Mvc\Controller\Plugin\ZfTvkurApiClient',
         ),
     ),
     'view_helpers' => array(
         'invokables' => array(
-            'TvkurApiClient' => 'TvkurApiClient\View\Helper\TvkurApiClient',
+            'ZfTvkurApiClient' => 'ZfTvkurApiClient\View\Helper\ZfTvkurApiClient',
         ),
     ),
     'tvkur' => array(

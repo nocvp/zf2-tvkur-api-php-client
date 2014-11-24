@@ -1,19 +1,19 @@
 <?php
 /**
- * 
+ *
  * User: semihs
  * Date: 21.11.14
- * Time: 17:49
- * 
+ * Time: 17:56
+ *
  */
 
-namespace TvkurApiClient\View\Helper;
+namespace ZfTvkurApiClient\Mvc\Controller\Plugin;
 
 use Zend\ServiceManager\ServiceLocatorAwareInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 use Zend\View\Helper\AbstractHelper;
 
-class TvkurApiClient extends AbstractHelper implements ServiceLocatorAwareInterface {
+class ZfTvkurApiClient extends AbstractHelper implements ServiceLocatorAwareInterface {
 
     protected $serviceLocator;
 
@@ -33,6 +33,6 @@ class TvkurApiClient extends AbstractHelper implements ServiceLocatorAwareInterf
 
     public function __invoke() {
         return $this->getServiceLocator()
-            ->getServiceLocator()->get('TvkurApiClient');
+            ->getServiceLocator()->get('ZfTvkurApiClient');
     }
 } 

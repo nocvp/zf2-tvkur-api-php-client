@@ -8,7 +8,7 @@
  */
  
 
-namespace TvkurApiClient;
+namespace ZfTvkurApiClient;
 
 class Module {
 
