@@ -10,21 +10,15 @@
 
 namespace ZfTvkurApiClient\Service;
 
+use TvkurApiClient\TvkurApiClient;
 use Zend\ServiceManager\ServiceLocatorAwareInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
 
 class ZfTvkurApiClientService implements ServiceLocatorAwareInterface
 {
+    use \Zend\ServiceManager\ServiceLocatorAwareTrait;
 
-    protected $serviceLocator;
-
-    public function setServiceLocator(ServiceLocatorInterface $serviceLocator)
-    {
-        $this->serviceLocator = $serviceLocator;
-    }
-
-    public function getServiceLocator()
-    {
-        return $this->serviceLocator;
+    public function __invoke() {
+        $config = $this->getServiceLocator()->getServiceLocator()->get('Config');
+        return new TvkurApiClient($config['tvkur']);
     }
 } 
