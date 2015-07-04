@@ -1,5 +1,5 @@
 {
-    "name": "noc-med/zf2-tvkur-api-php-client",
+    "name": "nocvp/zf2-tvkur-api-php-client",
     "description": "Tvkur Api Php Sdk for zf2",
     "minimum-stability": "dev",
     "license": "proprietary",
